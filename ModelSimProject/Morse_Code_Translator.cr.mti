@@ -1,0 +1,38 @@
+C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/uarec.vhd {1 {vcom -work work -2008 -explicit C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/uarec.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity uarec
+-- Compiling architecture behave of uarec
+
+} {} {}} C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en.vhd {1 {vcom -work work -2002 -explicit C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_reg_8_en
+-- Compiling architecture behave of shift_reg_8_en
+
+} {} {}} C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/cycle_count_16.vhd {1 {vcom -work work -2008 -explicit {C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity cycle_count_16
+-- Compiling architecture behave of cycle_count_16
+
+} {} {}} C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/rec_control_logic.vhd {1 {vcom -work work -2008 -explicit {C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Compiling entity rec_control_logic
+-- Compiling architecture behave of rec_control_logic
+
+} {} {}}
