@@ -22,7 +22,7 @@ function varargout = MorseCodeTranslator(varargin)
 
 % Edit the above text to modify the response to help MorseCodeTranslator
 
-% Last Modified by GUIDE v2.5 02-Apr-2017 20:42:01
+% Last Modified by GUIDE v2.5 11-Apr-2017 18:17:01
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -91,14 +91,22 @@ catch exception
     set(handles.axes1, 'Visible', 'off');
 end
 
-handles.PortName = 'COM1';
-handles.BaudRate = 9600;
-handles.DataBits = 7;
-handles.port1 = serial(handles.PortName, 'BaudRate', handles.BaudRate, 'DataBits', handles.DataBits);
+openPorts = instrhwinfo('serial');
 
-fopen(handles.port1);
-fclose(handles.port1);
-disp(['Opened up serial port ' handles.PortName ' with Baud Rate ' int2str(handles.BaudRate) ' and ' int2str(handles.DataBits) ' bits.']);
+if (~isempty(openPorts.AvailableSerialPorts))
+
+    handles.PortName = char(openPorts.AvailableSerialPorts(1));
+    handles.BaudRate = 9600;
+    handles.DataBits = 8;
+    handles.port1 = serial(handles.PortName, 'BaudRate', handles.BaudRate, 'DataBits', handles.DataBits);
+
+    fopen(handles.port1);
+    disp(['Opened up serial port ' handles.PortName ' with Baud Rate ' int2str(handles.BaudRate) ' and ' int2str(handles.DataBits) ' bits.']);
+
+end
+
+handles.text_to_translate = get(handles.edit1, 'String');
+handles.transmit_delay = 1; % 1 second between character transmissions
 
 % Update handles structure
 guidata(hObject, handles);
@@ -106,12 +114,6 @@ guidata(hObject, handles);
 % UIWAIT makes MorseCodeTranslator wait for user response (see UIRESUME)
 % uiwait(handles.figure1);
 
-
-function CloseRequestFcn(hObject, eventdata, handles)
-fclose(handles.port1);
-close all;
-bdclose all;
-disp(['Closing port ' handles.PortName]);
 
 % --- Outputs from this function are returned to the command line.
 function varargout = MorseCodeTranslator_OutputFcn(hObject, eventdata, handles) 
@@ -132,6 +134,12 @@ function edit1_Callback(hObject, eventdata, handles)
 
 % Hints: get(hObject,'String') returns contents of edit1 as text
 %        str2double(get(hObject,'String')) returns contents of edit1 as a double
+if(~isempty(get(hObject, 'String')))
+    handles.text_to_translate = get(hObject, 'String');
+end
+
+% Update handles structure
+guidata(hObject, handles);
 
 
 % --- Executes during object creation, after setting all properties.
@@ -153,6 +161,24 @@ function pushbutton1_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
+if (~isempty(handles.text_to_translate))
+    set(handles.edit1, 'Enable', 'inactive');
+    set(handles.pushbutton1, 'Enable', 'inactive');
+    
+    for i = 1:length(handles.text_to_translate)
+        set(handles.edit2, 'String', upper(handles.text_to_translate(i)));
+        fwrite(handles.port1, handles.text_to_translate(i));
+        pause(handles.transmit_delay);
+    end
+    
+    set(handles.pushbutton1, 'Enable', 'on');
+    set(handles.edit1, 'Enable', 'on');
+end
+
+set(handles.edit2, 'String', '');
+
+% Update handles structure
+guidata(hObject, handles);
 
 
 function edit2_Callback(hObject, eventdata, handles)
@@ -177,24 +203,13 @@ if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgr
 end
 
 
-
-function edit3_Callback(hObject, eventdata, handles)
-% hObject    handle to edit3 (see GCBO)
+% --- Executes when user attempts to close figure1.
+function figure1_CloseRequestFcn(hObject, eventdata, handles)
+% hObject    handle to figure1 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-% Hints: get(hObject,'String') returns contents of edit3 as text
-%        str2double(get(hObject,'String')) returns contents of edit3 as a double
-
-
-% --- Executes during object creation, after setting all properties.
-function edit3_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to edit3 (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    empty - handles not created until after all CreateFcns called
-
-% Hint: edit controls usually have a white background on Windows.
-%       See ISPC and COMPUTER.
-if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
-    set(hObject,'BackgroundColor','white');
-end
+% Hint: delete(hObject) closes the figure
+delete(handles.port1);
+disp(['Closing port ' handles.PortName]);
+delete(hObject);
