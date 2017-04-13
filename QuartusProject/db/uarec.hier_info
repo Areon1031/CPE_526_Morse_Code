@@ -1,0 +1,106 @@
+|uarec
+en => cycle_count_16:L1.en
+en => rec_control_logic:L2.en
+clk => cycle_count_16:L1.clk
+clk => rec_control_logic:L2.clk
+clk => shift_reg_8_en:L3.clk
+ser_in => rec_control_logic:L2.d
+ser_in => shift_reg_8_en:L3.din
+dout[0] <= shift_reg_8_en:L3.dout[0]
+dout[1] <= shift_reg_8_en:L3.dout[1]
+dout[2] <= shift_reg_8_en:L3.dout[2]
+dout[3] <= shift_reg_8_en:L3.dout[3]
+dout[4] <= shift_reg_8_en:L3.dout[4]
+dout[5] <= shift_reg_8_en:L3.dout[5]
+dout[6] <= shift_reg_8_en:L3.dout[6]
+dout[7] <= shift_reg_8_en:L3.dout[7]
+en_out <= rec_control_logic:L2.l
+
+
+|uarec|cycle_count_16:L1
+clk => f~reg0.CLK
+clk => h~reg0.CLK
+clk => \cnt:count[0].CLK
+clk => \cnt:count[1].CLK
+clk => \cnt:count[2].CLK
+clk => \cnt:count[3].CLK
+clk => \cnt:count[4].CLK
+r => count.OUTPUTSELECT
+r => count.OUTPUTSELECT
+r => count.OUTPUTSELECT
+r => count.OUTPUTSELECT
+r => count.OUTPUTSELECT
+r => h.OUTPUTSELECT
+r => f.OUTPUTSELECT
+en => f~reg0.ENA
+en => h~reg0.ENA
+en => \cnt:count[0].ENA
+en => \cnt:count[1].ENA
+en => \cnt:count[2].ENA
+en => \cnt:count[3].ENA
+en => \cnt:count[4].ENA
+h <= h~reg0.DB_MAX_OUTPUT_PORT_TYPE
+f <= f~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|uarec|rec_control_logic:L2
+d => process_1.IN0
+d => process_1.IN0
+clk => state[0].CLK
+clk => state[1].CLK
+clk => state[2].CLK
+clk => state[3].CLK
+en => process_1.IN1
+en => process_1.IN1
+en => process_1.IN0
+en => process_1.IN1
+h => process_1.IN1
+f => process_1.IN1
+s <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+l <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+r <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|uarec|shift_reg_8_en:L3
+din => dout[7]~reg0.DATAIN
+din => \shift:loc_dout[7].DATAIN
+clk => dout[0]~reg0.CLK
+clk => dout[1]~reg0.CLK
+clk => dout[2]~reg0.CLK
+clk => dout[3]~reg0.CLK
+clk => dout[4]~reg0.CLK
+clk => dout[5]~reg0.CLK
+clk => dout[6]~reg0.CLK
+clk => dout[7]~reg0.CLK
+clk => \shift:loc_dout[1].CLK
+clk => \shift:loc_dout[2].CLK
+clk => \shift:loc_dout[3].CLK
+clk => \shift:loc_dout[4].CLK
+clk => \shift:loc_dout[5].CLK
+clk => \shift:loc_dout[6].CLK
+clk => \shift:loc_dout[7].CLK
+en => dout[0]~reg0.ENA
+en => dout[1]~reg0.ENA
+en => dout[2]~reg0.ENA
+en => dout[3]~reg0.ENA
+en => dout[4]~reg0.ENA
+en => dout[5]~reg0.ENA
+en => dout[6]~reg0.ENA
+en => dout[7]~reg0.ENA
+en => \shift:loc_dout[1].ENA
+en => \shift:loc_dout[2].ENA
+en => \shift:loc_dout[3].ENA
+en => \shift:loc_dout[4].ENA
+en => \shift:loc_dout[5].ENA
+en => \shift:loc_dout[6].ENA
+en => \shift:loc_dout[7].ENA
+dout[0] <= dout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[4] <= dout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[5] <= dout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[6] <= dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[7] <= dout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

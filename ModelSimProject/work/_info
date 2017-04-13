@@ -9,16 +9,16 @@ Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 dC:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject
-Z5 8C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16.vhd
-Z6 FC:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16.vhd
+Z5 8C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/cycle_count_16.vhd
+Z6 FC:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/cycle_count_16.vhd
 l0
 L8
 VkZC>BGSPKVo@^YRTQaQ0D1
 Z7 OV;C;10.1d;51
 33
-Z8 !s108 1491882842.435000
-Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16.vhd|
-Z10 !s107 C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16.vhd|
+Z8 !s108 1491932591.115000
+Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/cycle_count_16.vhd|
+Z10 !s107 C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/cycle_count_16.vhd|
 Z11 o-work work -2008 -explicit -O0
 Z12 tExplicit 1
 !s100 E`Y81RWIbnAze;:[a2lkK1
@@ -41,32 +41,32 @@ R12
 !s100 KdzNGl7XTRD:Je:l`<Lf13
 !i10b 1
 Erec_control_logic
-Z13 w1491880642
+Z13 w1491932587
 Z14 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 R1
 R2
 R3
 R4
-Z15 8C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic.vhd
-Z16 FC:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic.vhd
+Z15 8C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/rec_control_logic.vhd
+Z16 FC:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/rec_control_logic.vhd
 l0
 L8
-Vg^:JU[RKB28K?J@E@Fc3W0
+V@>Vgk98aaAVL?4ii8PnFC3
 R7
 33
-Z17 !s108 1491882842.519000
-Z18 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic.vhd|
-Z19 !s107 C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic.vhd|
+Z17 !s108 1491932591.220000
+Z18 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/rec_control_logic.vhd|
+Z19 !s107 C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/rec_control_logic.vhd|
 R11
 R12
-!s100 `Y>N3j<5:<URYmG7GnNQo3
+!s100 Jgi[e4Obf[P_RHl6;cRLm1
 !i10b 1
 Abehave
 R14
 R1
 R2
 R3
-DEx4 work 17 rec_control_logic 0 22 g^:JU[RKB28K?J@E@Fc3W0
+DEx4 work 17 rec_control_logic 0 22 @>Vgk98aaAVL?4ii8PnFC3
 l22
 L19
 VA?Oj<=eV0<_^G6cM<;0CV3
@@ -92,7 +92,7 @@ L7
 VI5zfK2MDW_IU]?;DQge^:2
 R7
 32
-Z23 !s108 1491882842.610000
+Z23 !s108 1491932591.318000
 Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en.vhd|
 Z25 !s107 C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en.vhd|
 Z26 o-work work -2002 -explicit -O0
@@ -131,7 +131,7 @@ VffenbnlRHEfWEnh374YMH1
 R7
 33
 !i10b 1
-Z30 !s108 1491882842.694000
+Z30 !s108 1491932591.406000
 Z31 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/uarec.vhd|
 Z32 !s107 C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/uarec.vhd|
 R11
@@ -143,8 +143,8 @@ R3
 Z33 DEx4 work 5 uarec 0 22 ffenbnlRHEfWEnh374YMH1
 l50
 L21
-VeS@aE16d^:Qhd3_R>dO_I3
-!s100 R@e`bz6`4ZT>`2ehlUl>E1
+Z34 VeS@aE16d^:Qhd3_R>dO_I3
+Z35 !s100 R@e`bz6`4ZT>`2ehlUl>E1
 R7
 33
 !i10b 1

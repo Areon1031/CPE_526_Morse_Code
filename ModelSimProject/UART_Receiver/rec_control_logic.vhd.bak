@@ -58,7 +58,7 @@ begin
         next_state <= "0010";
         r <= '1';
         s <= '0';
-        l <= '0'
+        l <= '0';
       else
         next_state <= "0001";
         r <= '0';
