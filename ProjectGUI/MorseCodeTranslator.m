@@ -167,7 +167,7 @@ if (~isempty(handles.text_to_translate))
     
     for i = 1:length(handles.text_to_translate)
         set(handles.edit2, 'String', upper(handles.text_to_translate(i)));
-        fwrite(handles.port1, handles.text_to_translate(i));
+        fwrite(handles.port1, lower(handles.text_to_translate(i)));
         pause(handles.transmit_delay);
     end
     
