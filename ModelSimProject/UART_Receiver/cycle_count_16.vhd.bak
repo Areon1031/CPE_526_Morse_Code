@@ -3,6 +3,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use work.all;
 
 
 entity cycle_count_16 is
@@ -14,10 +15,10 @@ entity cycle_count_16 is
 end entity;
 
 architecture behave of cycle_count_16 is
-  variable count : unsigned(4 downto 0);
-
 begin
 	cnt: process(en, clk, r)
+	  variable count : unsigned(4 downto 0);
+	  
 	begin
 		if (clk'event and clk = '1') then
 			if (en = '1') then
