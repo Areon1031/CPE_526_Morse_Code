@@ -91,11 +91,12 @@ catch exception
     set(handles.axes1, 'Visible', 'off');
 end
 
-openPorts = instrhwinfo('serial');
+% openPorts = instrhwinfo('serial');
 
-if (~isempty(openPorts.AvailableSerialPorts))
+% if (~isempty(openPorts.AvailableSerialPorts))
 
-    handles.PortName = char(openPorts.AvailableSerialPorts(1));
+%     handles.PortName = char(openPorts.AvailableSerialPorts(1));
+    handles.PortName = 'COM1';
     handles.BaudRate = 9600;
     handles.DataBits = 8;
     handles.port1 = serial(handles.PortName, 'BaudRate', handles.BaudRate, 'DataBits', handles.DataBits);
@@ -103,10 +104,61 @@ if (~isempty(openPorts.AvailableSerialPorts))
     fopen(handles.port1);
     disp(['Opened up serial port ' handles.PortName ' with Baud Rate ' int2str(handles.BaudRate) ' and ' int2str(handles.DataBits) ' bits.']);
 
-end
+% end
 
 handles.text_to_translate = get(handles.edit1, 'String');
-handles.transmit_delay = 1; % 1 second between character transmissions
+
+% Timing delays for each character
+dot = 0.2;
+dash = 0.6;
+gap = 0.2;
+handles.transmit_delay = 2.6; % 1 second between character transmissions
+
+
+% Build a timing map for the Morse Code Characters
+keySet = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',...
+          'q','r','s','t','u','v','w','x','y','z','1','2','3','4','5',...
+          '6','7','8','9','0'};
+
+valueSet = [dot + dash + gap,           ... %a
+            3*dot + dash + 3*gap,       ... %b
+            2*dot + 2*dash + 3*gap,     ... %c
+            2*dot + dash + 2*gap,       ... %d
+            dot,                        ... %e
+            3*dot + dash + 3*gap,       ... %f
+            dot + 2*dash + 2*gap,       ... %g
+            4*dot + 3*gap,              ... %h
+            2*dot + gap,                ... %i
+            dot + 3*dash + 3*gap,       ... %j
+            dot + 2*dash + 2*gap,       ... %k
+            3*dot + dash + 3*gap,       ... %l
+            2*dash + gap,               ... %m
+            dot + dash + gap,           ... %n
+            3*dash + 2*gap,             ... %o
+            2*dot + 2*dash + 3*gap,     ... %p
+            dot + 3*dash + 3*gap,       ... %q
+            2*dot + dash + 2*gap,       ... %r
+            3*dot + 2*gap,              ... %s
+            dash,                       ... %t
+            2*dot + dash + 2*gap,       ... %u
+            3*dot + dash + 3*gap,       ... %v
+            dot + 2*dash + 2*gap,       ... %w
+            2*dot + 2*dash + 3*gap,     ... %x
+            dot + 3*dash + 3*gap,       ... %y
+            2*dot + 2*dash + 3*gap,     ... %z
+            dot + 4*dash + 4*gap,       ... %1
+            2*dot + 3*dash + 4*gap,     ... %2
+            3*dot + 2*dash + 4*gap,     ... %3
+            4*dot + dash + 4*gap,       ... %4
+            5*dot + 4*gap,              ... %5
+            4*dot + dash + 4*gap,       ... %6
+            3*dot + 2*dash + 4*gap,     ... %7
+            2*dot + 3*dash + 4*gap,     ... %8
+            dot + 4*dash + 4*gap,       ... %9
+            5*dash + 4*gap];                %0
+            
+
+handles.timing_map = containers.Map(keySet, valueSet);
 
 % Update handles structure
 guidata(hObject, handles);
@@ -167,8 +219,20 @@ if (~isempty(handles.text_to_translate))
     
     for i = 1:length(handles.text_to_translate)
         set(handles.edit2, 'String', upper(handles.text_to_translate(i)));
-        fwrite(handles.port1, lower(handles.text_to_translate(i)));
-        pause(handles.transmit_delay);
+
+        % If the character is a valid morse character
+        if (handles.timing_map.isKey(lower(handles.text_to_translate(i))))
+            fwrite(handles.port1, lower(handles.text_to_translate(i)));
+            pause(handles.timing_map(lower(handles.text_to_translate(i))));
+        else
+            fwrite(handles.port1, lower(handles.text_to_translate(i)));
+        end
+        
+        % Account for the space between words
+        if ((lower(handles.text_to_translate(i))- 0) == 32)
+            fwrite(handles.port1, lower(handles.text_to_translate(i)));
+            pause(7*handles.timing_map('e'));
+        end
     end
     
     set(handles.pushbutton1, 'Enable', 'on');
