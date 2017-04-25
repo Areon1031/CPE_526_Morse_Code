@@ -109,11 +109,10 @@ end
 handles.text_to_translate = get(handles.edit1, 'String');
 
 % Timing delays for each character
-dot = 0.2;
-dash = 0.6;
-gap = 0.2;
-handles.transmit_delay = 2.6; % 1 second between character transmissions
-
+time_unit = 0.2; % Single Time Unit
+dot = 1*time_unit;
+dash = 3*time_unit;
+gap = 1*time_unit;
 
 % Build a timing map for the Morse Code Characters
 keySet = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',...
@@ -231,7 +230,7 @@ if (~isempty(handles.text_to_translate))
         % Account for the space between words
         if ((lower(handles.text_to_translate(i))- 0) == 32)
             fwrite(handles.port1, lower(handles.text_to_translate(i)));
-            pause(7*handles.timing_map('e'));
+            pause(7*handles.timing_map('e')); % Spaces count for 7 time units
         end
     end
     
