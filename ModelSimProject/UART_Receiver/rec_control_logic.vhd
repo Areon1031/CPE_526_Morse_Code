@@ -17,7 +17,7 @@ entity rec_control_logic is
 end entity rec_control_logic;
 
 architecture behave of rec_control_logic is
-  signal state, next_state : std_logic_vector(3 downto 0);
+  signal state, next_state : std_logic_vector(3 downto 0) := "0000";
   
 begin
   -- Handle the clk

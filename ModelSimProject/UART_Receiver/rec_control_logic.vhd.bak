@@ -6,14 +6,14 @@ use IEEE.numeric_std.all;
 use IEEE.std_logic_arith.all;
 
 entity rec_control_logic is
-	port(d :in std_logic;
+	port(d :in boolean;
 			 clk :in std_logic;
-			 en :in std_logic;
-			 h :in std_logic;
-			 f :in std_logic;
-			 s :out std_logic;
-			 l :out std_logic;
-			 r :out std_logic);
+			 en :in boolean;
+			 h :in boolean;
+			 f :in boolean;
+			 s :out bit;
+			 l :out bit;
+			 r :out bit);
 end entity rec_control_logic;
 
 architecture behave of rec_control_logic is
