@@ -16,7 +16,7 @@ L7
 VkZC>BGSPKVo@^YRTQaQ0D1
 Z7 OV;C;10.1d;51
 33
-Z8 !s108 1492707621.605000
+Z8 !s108 1493169208.024000
 Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16.vhd|
 Z10 !s107 C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16.vhd|
 Z11 o-work work -2008 -explicit -O0
@@ -41,66 +41,63 @@ R12
 !s100 h7:LC5k9g`GQ[O8EmZaDW1
 !i10b 1
 Ecycle_count_16_tb
-Z13 w1492706525
+Z13 w1493167799
 R2
 R3
 R4
-Z14 8C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/cycle_count_16_tb.vhd
-Z15 FC:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/cycle_count_16_tb.vhd
+Z14 8C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16_tb.vhd
+Z15 FC:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16_tb.vhd
 l0
 L7
 VYi`BG^4`_PjXfz?A4RR[d2
 R7
 32
-Z16 !s108 1492707621.950000
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/cycle_count_16_tb.vhd|
-Z18 !s107 C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/cycle_count_16_tb.vhd|
+Z16 !s108 1493169208.372000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16_tb.vhd|
+Z18 !s107 C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\cycle_count_16_tb.vhd|
 Z19 o-work work -2002 -explicit -O0
 R12
 !s100 TK`QObY<mkjn6o]2B3;UJ2
 !i10b 1
 Atest
-Z20 w1492707615
 R2
 R3
-Z21 DEx4 work 17 cycle_count_16_tb 0 22 Yi`BG^4`_PjXfz?A4RR[d2
-Z22 8C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en_tb.vhd
-Z23 FC:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en_tb.vhd
-l22
+DEx4 work 17 cycle_count_16_tb 0 22 Yi`BG^4`_PjXfz?A4RR[d2
+l21
 L10
-V4BU^n`TMJZRHRO[Dn]X^h1
-!s100 O0PPjY2OhD?L=J:^_XR@R2
+VYh@i4k7D4lGnTnld46T;H0
 R7
 32
-!i10b 1
-Z24 !s108 1492707622.029000
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en_tb.vhd|
-Z26 !s107 C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en_tb.vhd|
+R16
+R17
+R18
 R19
 R12
+!s100 >4N`D<NQ25aTUB^=Mhm803
+!i10b 1
 Erec_control_logic
-Z27 w1492050885
-Z28 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z20 w1492050885
+Z21 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 R1
 R2
 R3
 R4
-Z29 8C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/rec_control_logic.vhd
-Z30 FC:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/rec_control_logic.vhd
+Z22 8C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic.vhd
+Z23 FC:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic.vhd
 l0
 L8
 V@>Vgk98aaAVL?4ii8PnFC3
 R7
 33
-Z31 !s108 1492707621.696000
-Z32 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/rec_control_logic.vhd|
-Z33 !s107 C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/rec_control_logic.vhd|
+Z24 !s108 1493169208.124000
+Z25 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic.vhd|
+Z26 !s107 C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic.vhd|
 R11
 R12
 !s100 Jgi[e4Obf[P_RHl6;cRLm1
 !i10b 1
 Abehave
-R28
+R21
 R1
 R2
 R3
@@ -110,29 +107,64 @@ L19
 VA?Oj<=eV0<_^G6cM<;0CV3
 R7
 33
-R31
-R32
-R33
+R24
+R25
+R26
 R11
 R12
 !s100 >kUeM><ES3IKcMO_@mX2C3
 !i10b 1
+Erec_control_logic_tb
+Z27 w1493167572
+R2
+R3
+R4
+Z28 8C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic_tb.vhd
+Z29 FC:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic_tb.vhd
+l0
+L7
+V<FVMiOHzO7SWH?YKjlRbn1
+!s100 ]jLcoL7^h7F0eJ8;i9Xa81
+R7
+32
+!i10b 1
+Z30 !s108 1493169208.541000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic_tb.vhd|
+Z32 !s107 C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\rec_control_logic_tb.vhd|
+R19
+R12
+Atest
+R2
+R3
+Z33 DEx4 work 20 rec_control_logic_tb 0 22 <FVMiOHzO7SWH?YKjlRbn1
+l27
+L10
+Z34 Vz6I@0;1^GczJAj@zX_lgg0
+Z35 !s100 D6@KWFnh`6b^NKAS8>]163
+R7
+32
+!i10b 1
+R30
+R31
+R32
+R19
+R12
 Eshift_reg_8_en
-Z34 w1491881875
+Z36 w1491881875
 R1
 R2
 R3
 R4
-Z35 8C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en.vhd
-Z36 FC:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en.vhd
+Z37 8C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\shift_reg_8_en.vhd
+Z38 FC:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\shift_reg_8_en.vhd
 l0
 L7
 VI5zfK2MDW_IU]?;DQge^:2
 R7
 32
-Z37 !s108 1492707621.786000
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en.vhd|
-Z39 !s107 C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/shift_reg_8_en.vhd|
+Z39 !s108 1493169208.202000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\shift_reg_8_en.vhd|
+Z41 !s107 C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\shift_reg_8_en.vhd|
 R19
 R12
 !s100 ]dK?D^2?6b<C026lCmmE_0
@@ -147,48 +179,64 @@ L14
 V5mZ8ihWI1AGP_:SJVdd582
 R7
 32
-R37
-R38
 R39
+R40
+R41
 R19
 R12
 !s100 VAgWB>gnzOf0`mK><7iGz3
 !i10b 1
 Eshift_reg_8_en_tb
-R20
+Z42 w1493169204
 R2
 R3
 R4
-R22
-R23
+Z43 8C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\shift_reg_8_en_tb.vhd
+Z44 FC:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\shift_reg_8_en_tb.vhd
 l0
 L7
 VDA12Ehmmf8QKiEl`>=fh<2
-!s100 jFn6hLM4@3kTl0hflLe2_3
 R7
 32
-!i10b 1
-R24
-R25
-R26
+Z45 !s108 1493169208.456000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\shift_reg_8_en_tb.vhd|
+Z47 !s107 C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\shift_reg_8_en_tb.vhd|
 R19
 R12
+!s100 jFn6hLM4@3kTl0hflLe2_3
+!i10b 1
+Atest
+R2
+R3
+DEx4 work 17 shift_reg_8_en_tb 0 22 DA12Ehmmf8QKiEl`>=fh<2
+l22
+L10
+VdN7Gi9dQOQ8aoS_<JUZMZ2
+R7
+32
+R45
+R46
+R47
+R19
+R12
+!s100 Z=8bG5k6Z<Z][3PKk^G0z0
+!i10b 1
 Euarec
-Z40 w1491882835
+Z48 w1491882835
 R1
 R2
 R3
 R4
-Z41 8C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/uarec.vhd
-Z42 FC:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/uarec.vhd
+Z49 8C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\uarec.vhd
+Z50 FC:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\uarec.vhd
 l0
 L13
 VffenbnlRHEfWEnh374YMH1
 R7
 33
-Z43 !s108 1492707621.868000
-Z44 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/uarec.vhd|
-Z45 !s107 C:/Users/krray/OneDrive/Documents/GitHub/CPE_526_Morse_Code/ModelSimProject/UART_Receiver/uarec.vhd|
+Z51 !s108 1493169208.287000
+Z52 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\uarec.vhd|
+Z53 !s107 C:\Users\krray\OneDrive\Documents\GitHub\CPE_526_Morse_Code\ModelSimProject\UART_Receiver\uarec.vhd|
 R11
 R12
 !s100 77B9SG<7MfWPHOO2:fi?m2
@@ -203,9 +251,9 @@ L21
 VeS@aE16d^:Qhd3_R>dO_I3
 R7
 33
-R43
-R44
-R45
+R51
+R52
+R53
 R11
 R12
 !s100 R@e`bz6`4ZT>`2ehlUl>E1

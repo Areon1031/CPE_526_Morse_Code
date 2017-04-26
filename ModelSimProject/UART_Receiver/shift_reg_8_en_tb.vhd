@@ -32,29 +32,149 @@ begin
   begin
     
     -- Cycle the clock
+    -- Pass the letter 'a' 01100001
     clk <= '0';            wait for 5 ns; 
-    din <= '1'; en <= '1'; wait for 5 ns;
+    din <= '1'; en <= '1'; 
     clk <= '1';            wait for 5 ns; -- 1 count
-    clk <= '0';            wait for 5 ns; 
-    din <= '0';            wait for 5 ns;
+    clk <= '0'; en <= '0'; wait for 5 ns; 
     clk <= '1';            wait for 5 ns; -- 2 count
     clk <= '0';            wait for 5 ns; 
-    din <= '0';            wait for 5 ns;
     clk <= '1';            wait for 5 ns; -- 3 count
     clk <= '0';            wait for 5 ns; 
-    din <= '0';            wait for 5 ns;
     clk <= '1';            wait for 5 ns; -- 4 count
     clk <= '0';            wait for 5 ns; 
-    din <= '0';            wait for 5 ns;
     clk <= '1';            wait for 5 ns; -- 5 count
     clk <= '0';            wait for 5 ns; 
-    din <= '0';            wait for 5 ns;
     clk <= '1';            wait for 5 ns; -- 6 count
     clk <= '0';            wait for 5 ns; 
-    din <= '0';            wait for 5 ns;
     clk <= '1';            wait for 5 ns; -- 7 count
     clk <= '0';            wait for 5 ns; 
-    din <= '0';            wait for 5 ns;
+    clk <= '1';            wait for 5 ns; -- 8 count
+    
+    clk <= '0';            wait for 5 ns; 
+    din <= '0'; en <= '1'; 
+    clk <= '1';            wait for 5 ns; -- 1 count
+    clk <= '0'; en <= '0'; wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 2 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 3 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 4 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 5 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 6 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 7 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 8 count
+    
+    clk <= '0';            wait for 5 ns; 
+    din <= '0'; en <= '1'; 
+    clk <= '1';            wait for 5 ns; -- 1 count
+    clk <= '0'; en <= '0'; wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 2 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 3 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 4 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 5 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 6 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 7 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 8 count
+    
+    clk <= '0';            wait for 5 ns; 
+    din <= '0'; en <= '1'; 
+    clk <= '1';            wait for 5 ns; -- 1 count
+    clk <= '0'; en <= '0'; wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 2 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 3 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 4 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 5 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 6 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 7 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 8 count
+    
+    clk <= '0';            wait for 5 ns; 
+    din <= '0'; en <= '1'; 
+    clk <= '1';            wait for 5 ns; -- 1 count
+    clk <= '0'; en <= '0'; wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 2 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 3 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 4 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 5 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 6 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 7 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 8 count
+    
+    clk <= '0';            wait for 5 ns; 
+    din <= '1'; en <= '1'; 
+    clk <= '1';            wait for 5 ns; -- 1 count
+    clk <= '0'; en <= '0'; wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 2 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 3 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 4 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 5 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 6 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 7 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 8 count
+    
+    clk <= '0';            wait for 5 ns; 
+    din <= '1'; en <= '1'; 
+    clk <= '1';            wait for 5 ns; -- 1 count
+    clk <= '0'; en <= '0'; wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 2 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 3 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 4 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 5 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 6 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 7 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 8 count
+    
+    clk <= '0';            wait for 5 ns; 
+    din <= '0'; en <= '1'; 
+    clk <= '1';            wait for 5 ns; -- 1 count
+    clk <= '0'; en <= '0'; wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 2 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 3 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 4 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 5 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 6 count
+    clk <= '0';            wait for 5 ns; 
+    clk <= '1';            wait for 5 ns; -- 7 count
+    clk <= '0';            wait for 5 ns; 
     clk <= '1';            wait for 5 ns; -- 8 count
 
     

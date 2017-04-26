@@ -55,7 +55,24 @@ begin
     clk <= '0';          wait for 5 ns; 
     clk <= '1';          wait for 5 ns; -- 7 count
     clk <= '0';          wait for 5 ns;
-    clk <= '1';          wait for 5 ns; -- 8 count 
+    clk <= '1';          wait for 5 ns; -- 8 count -- h should go high
+    
+    clk <= '0';          wait for 5 ns; 
+    clk <= '1';          wait for 5 ns; -- 9 count
+    clk <= '0';          wait for 5 ns; 
+    clk <= '1';          wait for 5 ns; -- 10 count
+    clk <= '0';          wait for 5 ns; 
+    clk <= '1';          wait for 5 ns; -- 11 count
+    clk <= '0';          wait for 5 ns; 
+    clk <= '1';          wait for 5 ns; -- 12 count
+    clk <= '0';          wait for 5 ns; 
+    clk <= '1';          wait for 5 ns; -- 13 count
+    clk <= '0';          wait for 5 ns; 
+    clk <= '1';          wait for 5 ns; -- 14 count
+    clk <= '0';          wait for 5 ns; 
+    clk <= '1';          wait for 5 ns; -- 15 count
+    clk <= '0';          wait for 5 ns;
+    clk <= '1';          wait for 5 ns; -- 16 count -- f should go high
 
     
     wait;

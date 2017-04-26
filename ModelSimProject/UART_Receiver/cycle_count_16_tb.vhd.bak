@@ -60,5 +60,5 @@ begin
     
     wait;
     
-  end
+  end process;
 end architecture test;
